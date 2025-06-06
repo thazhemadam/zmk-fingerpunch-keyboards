@@ -2,6 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: george-norton
+      url-base: https://github.com/george-norton
     - name: petejohanson
       url-base: https://github.com/petejohanson
     - name: sadekbaroudi
@@ -18,6 +20,9 @@ manifest:
     #   remote: zmkfirmware
     #   revision: v0.2.1
     #   import: app/west.yml
+    - name: zmk-driver-pmw3360
+      remote: george-norton
+      revision: main
     - name: chiptuner-zmk-module
       remote: petejohanson
       revision: main
