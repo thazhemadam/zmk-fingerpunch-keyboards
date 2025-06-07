@@ -81,9 +81,9 @@
         default_layer {
             // TODO - Replace middle keys with mouse keys when pmw3360 is supported, see vik_pmw3360_per56 shield in zmk-fingerpunch-vik repository
             bindings = <
-    &kp ESC       &kp Q        &kp W        &kp F         &kp P          &kp B                                                       &kp J           &kp L          &lt WINNAV U  &kp Y         &kp SEMI    &kp BSLH
+    &bootloader       &bootloader        &bootloader        &bootloader       &bootloader        &bootloader                                                       &bootloader       &bootloader        &bootloader        &bootloader       &bootloader        &bootloader
     &kp TAB       &hm LCTL A   &hm LGUI R   &hm LALT S    &hs LSHIFT T   &kp G                                                       &kp M           &hs RSHIFT N   &hm RALT E    &hm RGUI I    &hm RCTL O  &kp SQT
-    &kp LSHIFT    &kp Z        &kp X        &kp C         &kp D          &kp V                                                       &kp K           &kp H          &kp COMMA     &kp DOT       &kp FSLH    &kp RCTRL
+    &bootloader       &bootloader        &bootloader        &bootloader       &bootloader        &bootloader                                                       &bootloader       &bootloader        &bootloader        &bootloader       &bootloader        &bootloader
                                             &kp DEL       &lt NAV RET    &lt FUNC TAB      &kp N1       &kp N2        &kp N3         &lt MEDIA BSPC  &lt SYM SPACE  &kp SQT
                   &kp C_VOL_UP              &kp C_VOL_DN  &kp C_MUTE     &kp C_VOL_UP                                                &kp C_VOL_DN    &kp C_MUTE     &kp C_VOL_UP                &kp C_VOL_UP
     &kp C_VOL_DN  &kp C_MUTE   &kp C_VOL_UP                                                                                                                                       &kp C_VOL_DN  &kp C_MUTE   &kp C_VOL_UP
