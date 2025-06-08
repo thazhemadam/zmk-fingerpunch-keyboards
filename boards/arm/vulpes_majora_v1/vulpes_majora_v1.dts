@@ -115,7 +115,7 @@
 
 &spi0 {
     status = "okay";
-    cs-gpios = VIK_SPI_CS_PREFIX, <&gpio0 21 GPIO_ACTIVE_LOW>;
+    cs-gpios = VIK_SPI_CS_PREFIX;
     pinctrl-0 = <&spi0_default>;
     pinctrl-names = "default";
     clock-frequency = <DT_FREQ_M(2)>;
@@ -129,6 +129,14 @@
         #gpio-cells = <2>;
         ngpios = <8>;
     };
+};
+
+&vik_spi {
+    status = "okay";
+    cs-gpios = VIK_SPI_CS_PREFIX, <&gpio0 21 GPIO_ACTIVE_LOW>;
+    pinctrl-0 = <&spi0_default>;
+    pinctrl-names = "default";
+    clock-frequency = <DT_FREQ_M(2)>;
 
     mouse: mouse@1 {
 		compatible = "pixart,pmw3360";
