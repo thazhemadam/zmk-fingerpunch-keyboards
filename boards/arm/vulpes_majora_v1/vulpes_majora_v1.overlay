@@ -1,0 +1,20 @@
+&spi0 {
+    /* Extend chip select list for the PMW3360 */
+    cs-gpios = VIK_SPI_CS_PREFIX <&gpio0 21 GPIO_ACTIVE_LOW>;
+
+    pmw3360: trackball@VIK_SPI_REG_START {
+        compatible = "pixart,pmw3360";
+        reg = <VIK_SPI_REG_START>;
+        spi-max-frequency = <2000000>;
+        irq-gpios = <&gpio0 27 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        cpi = <600>;
+        rotate-90;
+    };
+};
+
+&{/} {
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&pmw3360>;
+    };
+};

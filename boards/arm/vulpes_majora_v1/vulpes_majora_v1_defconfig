@@ -51,3 +51,8 @@ CONFIG_WS2812_STRIP=y
 
 # Allow toggling underglow without toggling external power
 CONFIG_ZMK_RGB_UNDERGLOW_EXT_POWER=n
+
+# Enable PMW3360 trackball support
+CONFIG_ZMK_POINTING=y
+CONFIG_INPUT=y
+CONFIG_INPUT_PIXART_PMW3360=y
