@@ -36,6 +36,8 @@ CONFIG_BUILD_OUTPUT_UF2=y
 # for Shift Register and leds, if configured
 CONFIG_SPI=y
 
+CONFIG_ZMK_POINTING=y
+
 # For audio buzzer
 CONFIG_PWM=y
 # https://discord.com/channels/939959680611020840/1189280494001606657/1246715087549628417
