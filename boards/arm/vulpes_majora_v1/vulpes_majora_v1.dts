@@ -11,6 +11,7 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/led/led.h>
 #include <freq.h>
+#include <common/rp2-boot-mode-retention.dtsi>
 
 / {
     model = "vulpes_majora_v1";
