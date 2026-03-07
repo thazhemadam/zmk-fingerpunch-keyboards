@@ -2,10 +2,12 @@ manifest:
   remotes:
     - name: sadekbaroudi
       url-base: https://github.com/sadekbaroudi
+    - name: taz
+      url-base: https://github.com/thazhemadam
   projects:
     - name: zmk-fingerpunch-vik
-      remote: sadekbaroudi
-      revision: main
+      remote: taz
+      revision: zmk-v4.1/drop-cirque-input-module
       import: config/deps.yml
     - name: zmk-fingerpunch-controllers
       remote: sadekbaroudi
